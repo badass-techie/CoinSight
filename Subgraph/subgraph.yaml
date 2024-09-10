@@ -1,0 +1,85 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: BTC
+    network: mainnet
+    source:
+      address: "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c"
+      abi: EACAggregatorProxy
+      startBlock: 10606501
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      abis:
+        - name: EACAggregatorProxy
+          file: ./abis/EACAggregatorProxy.json
+      entities:
+        - Price
+      blockHandlers:
+        - handler: handlePriceUpdateBTC
+      file: ./src/eac-aggregator-proxy.ts
+
+  - kind: ethereum
+    name: ETH
+    network: mainnet
+    source:
+      address: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+      abi: EACAggregatorProxy
+      startBlock: 10606501
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      abis:
+        - name: EACAggregatorProxy
+          file: ./abis/EACAggregatorProxy.json
+      entities:
+        - Price
+      blockHandlers:
+        - handler: handlePriceUpdateETH
+      file: ./src/eac-aggregator-proxy.ts
+
+  - kind: ethereum
+    name: LINK
+    network: mainnet
+    source:
+      address: "0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c"
+      abi: EACAggregatorProxy
+      startBlock: 10606428
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      abis:
+        - name: EACAggregatorProxy
+          file: ./abis/EACAggregatorProxy.json
+      entities:
+        - Price
+      blockHandlers:
+        - handler: handlePriceUpdateLINK
+      file: ./src/eac-aggregator-proxy.ts
+
+  - kind: ethereum
+    name: XAU
+    network: mainnet
+    source:
+      address: "0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6"
+      abi: EACAggregatorProxy
+      startBlock: 10606502
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      abis:
+        - name: EACAggregatorProxy
+          file: ./abis/EACAggregatorProxy.json
+      entities:
+        - Price
+      blockHandlers:
+        - handler: handlePriceUpdateXAU
+      file: ./src/eac-aggregator-proxy.ts

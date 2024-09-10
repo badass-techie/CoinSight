@@ -1,0 +1,19 @@
+version: '3'
+services:
+  bot:
+    build: .
+    image: coinsight:latest
+    restart: on-failure
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    command:  # install any new packages since last build then start the app
+      - sh
+      - -c
+      - |
+        npm install
+        npm start
+  

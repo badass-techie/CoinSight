@@ -1,0 +1,7 @@
+type Price @entity {
+  id: ID!
+  token: String!
+  price: BigInt!
+  decimals: BigInt!
+  timestamp: BigInt!
+}

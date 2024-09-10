@@ -1,0 +1,7 @@
+.idea
+.env
+ngrok.exe
+dist
+node_modules
+*.log
+credentials.json

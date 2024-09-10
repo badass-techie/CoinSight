@@ -1,0 +1,20 @@
+{
+  "mainnet": {
+    "BTC": {
+      "address": "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c",
+      "startBlock": 10606501
+    },
+    "ETH": {
+      "address": "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419",
+      "startBlock": 10606501
+    },
+    "LINK": {
+      "address": "0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c",
+      "startBlock": 10606428
+    },
+    "XAU": {
+      "address": "0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6",
+      "startBlock": 10606502
+    }
+  }
+}
