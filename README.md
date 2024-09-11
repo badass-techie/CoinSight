@@ -44,9 +44,10 @@ CoinSight is a Telegram bot designed to provide cryptocurrency traders with a re
 
 ## Challenges Faced
 
-- The main challenge we faced was finding the right contracts to query the prices, as most smart contracts we tried to use with our subgraph did not have enough historical data to make an informed prediction. 
+1. **Data Availability**: Finding the right smart contracts to query for historical price data proved challenging. Many contracts initially considered for the subgraph did not have sufficient historical data to make informed predictions.
 
-- Insufficient documentation for the tools we worked with
+2. **Documentation Gaps**: The team faced difficulties due to insufficient documentation for some of the tools used in the project. This required additional research and experimentation to implement certain features correctly.
+
 
 ## Team Members
 
