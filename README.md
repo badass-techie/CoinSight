@@ -1,5 +1,7 @@
 # CoinSight: Cryptocurrency Price Prediction Bot - ETHSafari 2024 Hackathon
 
+![CoinSight](./coinsight.png)
+
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
