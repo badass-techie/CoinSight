@@ -1,5 +1,9 @@
 # CoinSight: Cryptocurrency Price Prediction Bot - ETHSafari 2024 Hackathon
 
+## Project Overview
+
+CoinSight is a Telegram bot designed to provide cryptocurrency traders with a reliable and efficient tool for accessing historical price data and future price predictions. This enables users to make more informed decisions about their investments.
+
 
 ## Inspiration
 
@@ -12,17 +16,35 @@ The main inspiration behind CoinSight was the need for a reliable and efficient 
 By combining blockchain data indexing with AI-powered predictions, CoinSight aims to provide a comprehensive solution for crypto traders.
 
 
-## Project Overview
-
-CoinSight is a Telegram bot designed to provide cryptocurrency traders with a reliable and efficient tool for accessing historical price data and future price predictions. This enables users to make more informed decisions about their investments.
-
-
-
 ## Features
 
 - **Historical Data Analysis**: Utilizes a custom subgraph to fetch historical price data for cryptocurrencies.
 - **ORA AI Oracle**: Uses the ORA AI Oracle Plugin by Chainsafe to get AI-powered predictions for cryptocurrencies.
 - **Telegram Integration**: Provides a Telegram bot interface for users to interact with the predictions.
+
+## How It Works
+
+### Subgraph Component
+
+The subgraph continuously indexes price data from Chainlink price feeds on the Ethereum mainnet. This allows for efficient querying of historical price data for supported cryptocurrencies and gold.
+
+### Telegram Bot Component
+
+The bot serves as the user interface, allowing users to:
+
+1. Select a cryptocurrency or gold
+2. Choose a future date for prediction
+3. View recent historical price data
+4. Receive an AI-generated price prediction for the selected date
+
+### AI Prediction Process
+
+1. The bot fetches recent historical price data from the subgraph
+2. This data is used to formulate a prompt for the ChainSafe on-chain AI model
+3. The AI model processes the historical data and generates a price prediction
+4. The prediction is returned to the user via the Telegram bot
+
+By combining these components, CoinSight provides users with a seamless experience for accessing both historical and predicted future price data for their chosen assets.
 
 ## Demo
 
@@ -37,10 +59,10 @@ CoinSight is a Telegram bot designed to provide cryptocurrency traders with a re
 - NodeJS
 - The Graph
 - ORA AI Oracle Plugin by Chainsafe
-- Telegram
+- Telegram Bot API
 - Chainlink Price Feeds
 - Docker 
-- AWS deployment
+- AWS for deployment
 
 ## Challenges Faced
 
@@ -53,10 +75,6 @@ CoinSight is a Telegram bot designed to provide cryptocurrency traders with a re
 
 - [Moses Odhiambo](https://github.com/badass-techie)
 - [Dennis Kimathi](https://github.com/dennohkim)
-
-
-
-
 
 
 
