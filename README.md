@@ -27,6 +27,10 @@ CoinSight is a Telegram bot designed to provide cryptocurrency traders with a re
 ## Demo
 
 
+## Live Deployment
+
+[CoinSight Bot](https://t.me/coinsightv1bot)
+
 
 ## Tech Stack  
 
