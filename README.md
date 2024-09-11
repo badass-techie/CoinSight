@@ -6,29 +6,33 @@
 
 1. [Project Overview](#project-overview)
 2. [Inspiration](#inspiration)
-3. [Features](#features)
-4. [How It Works](#how-it-works)
-5. [Demo](#demo)
-6. [Live Deployment](#live-deployment)
-7. [Tech Stack](#tech-stack)
-8. [Challenges Faced](#challenges-faced)
-9. [Team Members](#team-members)
+3. [Why Telegram?](#why-telegram)
+4. [Features](#features)
+5. [How It Works](#how-it-works)
+6. [Demo](#demo)
+7. [Live Deployment](#live-deployment)
+8. [Tech Stack](#tech-stack)
+9. [Challenges Faced](#challenges-faced)
+10. [Roadmap](#roadmap)
+11. [Team Members](#team-members)
 
 ## Project Overview
 
-CoinSight is a Telegram bot designed to provide cryptocurrency traders with a reliable and efficient tool for accessing historical price data and future price predictions. This enables users to make more informed decisions about their investments.
-
+CoinSight is a Telegram bot designed to provide users with a reliable and efficient tool for accessing historical price data and future price predictions. This enables them to make more informed decisions about their investments for maximum returns.
 
 ## Inspiration
 
-The main inspiration behind CoinSight was the need for a reliable and efficient tool that cryptocurrency traders could use to:
+The main inspiration behind CoinSight was the need for a reliable and efficient tool that users who own assets in the blockchain can use to:
 
 1. Access historical price data
 2. Obtain future price predictions
-3. Make informed decisions about their investments
+3. HODL or sell their assets or buy new ones based on the predictions
 
-By combining blockchain data indexing with AI-powered predictions, CoinSight aims to provide a comprehensive solution for crypto traders.
+By combining blockchain data indexing with AI-powered predictions, CoinSight aims to empower users to maximize their returns on investments in the blockchain.
 
+## Why Telegram?
+
+It is much easier to onboard the users of an existing platform than to grow a new one from scratch. Telegram is a popular messaging platform in the blockchain community - that's why it's the communication channel of choice for ETHSafari 2024. By integrating CoinSight with Telegram, we can leverage the platform's existing user base to quickly onboard users in a familiar environment.
 
 ## Features
 
@@ -61,14 +65,12 @@ The bot serves as the user interface, allowing users to:
 By combining these components, CoinSight provides users with a seamless experience for accessing both historical and predicted future price data for their chosen assets.
 
 ## Demo
+
 [CoinSight Demo](https://share.vidyard.com/watch/YesqZj1MFQmF2CJcNM86jx?)
-
-
 
 ## Live Deployment
 
 [CoinSight Bot](https://t.me/coinsightv1bot)
-
 
 ## Tech Stack  
 
@@ -78,7 +80,7 @@ By combining these components, CoinSight provides users with a seamless experien
 - ORA AI Oracle Plugin by Chainsafe
 - Telegram Bot API
 - Chainlink Price Feeds
-- Docker 
+- Docker
 - AWS for deployment
 
 ## Challenges Faced
@@ -87,11 +89,17 @@ By combining these components, CoinSight provides users with a seamless experien
 
 2. **Documentation Gaps**: The team faced difficulties due to insufficient documentation for some of the tools used in the project. This required additional research and experimentation to implement certain features correctly.
 
+## Roadmap
+
+1. **Roll Out to Additional Platforms**: Integrate CoinSight with other messaging platforms like Discord to reach a wider audience.
+
+2. **Improve Prediction Accuracy**: We hope to achieve this by training a custom ML model specialized for time series data as opposed to using LLMs provided the ORA AI Oracle Plugin.
+
+3. **Add More Tokens**: Integrate more token contracts to the subgraph to provide a wider range of assets for users to query.
+
+4. **Issue Realtime Data Updates**: Implement a notification system to alert users when new price data is available for their selected assets.
 
 ## Team Members
 
 - [Moses Odhiambo](https://github.com/badass-techie)
 - [Dennis Kimathi](https://github.com/dennohkim)
-
-
-
