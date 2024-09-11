@@ -53,14 +53,16 @@ The bot serves as the user interface, allowing users to:
 
 ### AI Prediction Process
 
-1. The bot fetches recent historical price data from the subgraph
-2. This data is used to formulate a prompt for the ChainSafe on-chain AI model
-3. The AI model processes the historical data and generates a price prediction
-4. The prediction is returned to the user via the Telegram bot
+1. The bot fetches recent historical price data from the subgraph.
+2. This data is used to formulate a prompt for ORA AI on-chain model using Web3 JS plugin.
+3. The AI model processes the historical data and generates a price prediction.
+4. The prediction is returned to the user via the Telegram bot.
 
 By combining these components, CoinSight provides users with a seamless experience for accessing both historical and predicted future price data for their chosen assets.
 
 ## Demo
+[CoinSight Demo](https://share.vidyard.com/watch/YesqZj1MFQmF2CJcNM86jx?)
+
 
 
 ## Live Deployment
