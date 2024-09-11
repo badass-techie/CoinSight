@@ -1,5 +1,7 @@
 # CoinSight: Cryptocurrency Price Prediction Bot - ETHSafari 2024 Hackathon
 
+## Table of Contents
+
 1. [Project Overview](#project-overview)
 2. [Inspiration](#inspiration)
 3. [Features](#features)
@@ -68,6 +70,7 @@ By combining these components, CoinSight provides users with a seamless experien
 
 - NodeJS
 - The Graph
+- Web3 JS
 - ORA AI Oracle Plugin by Chainsafe
 - Telegram Bot API
 - Chainlink Price Feeds
